@@ -12,17 +12,15 @@ describe('Cookie Clicker', () => {
   });
 
   it('Should increment count on every click', async () => {
-    const clicks = [];
-
     for (let index = 0; index < 10; index += 1) {
-      clicks.push(page.click('[name="cookie-increment"]'));
+      // eslint-disable-next-line no-await-in-loop
+      await page.click('[name="cookie-increment"]');
     }
-    await Promise.all(clicks);
 
     await page.waitForSelector(countSelector);
     const element = await page.$(countSelector);
     const textValue = await page.evaluate((searchElement) => searchElement.textContent, element);
 
-    expect(textValue).toEqual(clicks.length.toString());
+    expect(textValue).toEqual('10');
   });
 });

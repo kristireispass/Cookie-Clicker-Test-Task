@@ -4,7 +4,7 @@ const countSelector = '#cookie-count';
 
 describe('Cookie Clicker', () => {
   beforeAll(async () => {
-    await page.goto(PAGE_URL);
+    await page.goto(PAGE_URL, { waitUntil: 'networkidle2' });
   });
 
   it('Should be titled "Cookie Clicker"', async () => {

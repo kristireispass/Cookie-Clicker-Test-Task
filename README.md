@@ -38,3 +38,5 @@ running.
 
 Any extra functionality in the solution, which is not laid out in the spec should also
 be tested
+
+Example solution for this test task can be found at: [Cookie Clicker test task example](https://github.com/Foundation-CR14/Cookie-Clicker-test-task-example)

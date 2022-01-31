@@ -2,7 +2,7 @@
   "name": "cookie-clicker",
   "version": "1.0.0",
   "scripts": {
-    "test": "yarn node --experimental-vm-modules $(yarn bin jest --runInBand)"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand"
   },
   "dependencies": {
     "jest": "^27.4.5",
@@ -10,6 +10,7 @@
     "puppeteer": "^13.0.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^8.6.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",

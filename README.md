@@ -1,20 +1,24 @@
-# Cookie Clicker Task
+## Cookie Clicker
 
-Your task is to:
+This Cookie Clicker is created using [Create React App](https://github.com/facebook/create-react-app).
 
-1. write a small Cookie Clicker web application, which follows the specs outlaid in
-tests of this repository.
-
-2. Ammend the tests (and your application code) in a way that every rerun of the tests
-will reproduce same results without restarting the application.
-
-## Tests setup
+### Setup
 
 1. Install latest Node (at least Node v16)
 
 2. Install packages with `yarn install`
 
-## Running tests
+3. Install packages with `npm install`
+
+### Running
+
+To start the application go to folder "cookie-clicker" and use:
+### `npm start`
+
+This runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### Testing
 
 On Linux
 
@@ -26,17 +30,3 @@ On Windows cmd (Command Prompt)
 setx PAGE_URL "YOUR_APPLICATION_URL_GOES_HERE"
 yarn test
 ```
-
-## Other notes
-
-You are free to use whatever language/framework/technologies you want.
-
-Along with code submit instructions how to start the application.
-
-No backend is necessary, it is fine to hold the count as long as the application is
-running.
-
-Any extra functionality in the solution, which is not laid out in the spec should also
-be tested
-
-Example solution for this test task can be found at: [Cookie Clicker test task example](https://github.com/Foundation-CR14/Cookie-Clicker-test-task-example)
